@@ -109,6 +109,7 @@ yarn-debug.log*
 
 ./journey.txt
 journey.txt
+problems.txt
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
