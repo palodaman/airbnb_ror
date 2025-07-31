@@ -16,6 +16,9 @@ gem "puma", ">= 5.0"
 gem "rails", "~> 8.0.2"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
+
+gem "tailwindcss-rails", "~> 4.3"
+gem "tailwindcss-ruby", "~> 4.1"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -55,3 +58,4 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
+
