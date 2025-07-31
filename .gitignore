@@ -107,3 +107,5 @@ yarn-debug.log*
 **/.DS_Store
 .DS_Store
 
+./journey.txt
+journey.txt
