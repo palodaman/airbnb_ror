@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+#Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.9', '>= 4.9.4'
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
