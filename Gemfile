@@ -4,6 +4,7 @@ source "https://rubygems.org"
 gem "bootsnap", require: false
 #Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.9', '>= 4.9.4'
+gem 'faker'
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]

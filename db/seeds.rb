@@ -8,24 +8,15 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-Property.create!({
-    name: 'Sample property',
-    headline: 'Sample headline',
-    description: 'Sample description',
-    address_1: '123 Main St',
-    address_2: 'Apt 1',
-    city: 'Sample City',
-    state: 'Sample State',
-    country: 'Sample Country'
+20.times do 
+    Property.create!({
+    name: Faker::FunnyName.two_word_name,
+    headline: Faker::Lorem.unique.sentence(word_count: 6),
+    description: Faker::Lorem.paragraph(sentence_count: 10),
+    address_1: Faker::Address.street_address,
+    address_2: Faker::Address.secondary_address,
+    city: Faker::Address.city,
+    state: Faker::Address.state,
+    country: Faker::Address.country
 }) 
-
-Property.create!({
-    name: 'Sample property 2',
-    headline: 'Sample headline',
-    description: 'Sample description 2',
-    address_1: '123 Main St',
-    address_2: 'Apt 1',
-    city: 'Sample City 2',
-    state: 'Sample State 2',
-    country: 'Sample Country'
-})
+end
