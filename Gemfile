@@ -10,6 +10,7 @@ gem "importmap-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 # Use postgresql as the database for Active Record
+gem 'money-rails', '~> 1.12'
 gem "pg", "~> 1.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
