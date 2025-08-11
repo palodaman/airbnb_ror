@@ -10,4 +10,7 @@ class Property < ApplicationRecord
     monetize :price_cents, allow_nil: true 
 
     has_many_attached :images
+
+    has_many :reviews, dependent: :destroy #if a porpety is removed, all its reviews should also cascade csc 370
+    #when the object is destroyed, destroy will be called on its associated objects.
 end 
