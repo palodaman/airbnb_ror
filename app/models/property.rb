@@ -13,4 +13,9 @@ class Property < ApplicationRecord
 
     has_many :reviews, dependent: :destroy #if a porpety is removed, all its reviews should also cascade csc 370
     #when the object is destroyed, destroy will be called on its associated objects.
+
+    def update_average_rating
+        average_rating = reviews.average(:final_rating)
+        update_column(:average_final_rating, average_rating)
+    end
 end 
