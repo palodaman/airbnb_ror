@@ -15,5 +15,9 @@ Rails.application.routes.draw do
   # get "home/index"
   root "home#index"
 
+  namespace :api do
+    resources :wishlists, only: [:create, :destroy]
+  end
+
 
 end
