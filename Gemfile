@@ -13,7 +13,7 @@ gem "importmap-rails"
 gem "jbuilder"
 # Use postgresql as the database for Active Record
 gem 'money-rails', '~> 1.12'
-gem "pg", "~> 1.1"
+gem "pg", "~> 1.6"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use the Puma web server [https://github.com/puma/puma]
